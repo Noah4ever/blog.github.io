@@ -14,6 +14,7 @@ export default defineConfig({
       "@utils": "/src/utils",
       "@types": "/src/types",
       "@assets": "/src/assets",
+      "@articles": "/src/articles",
     },
   },
   test: {

@@ -1,0 +1,32 @@
+.article-preview-container {
+  display: flex;
+  flex-direction: column;
+  .article-preview-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0rem;
+    margin-top: 0.25rem;
+    padding: 0;
+  }
+  .article-preview-description {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+  }
+  .article-preview-tech-stack {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    .article-preview-tag {
+      margin-right: 0.5rem;
+      background-color: #d69e3769;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      border: 1px solid #fcc766;
+    }
+  }
+  .article-preview-info {
+    font-size: 0.8rem;
+    margin: 0;
+    color: var(--text-color-muted);
+  }
+}

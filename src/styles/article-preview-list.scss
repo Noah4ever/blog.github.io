@@ -1,0 +1,21 @@
+.article-preview-list-container {
+  margin-top: 70px;
+  padding-inline: 1rem;
+  .article-preview-list {
+    margin: 0;
+    padding: 0;
+    padding-inline: 2rem;
+    .article-preview-list-item {
+      list-style-type: none;
+      padding: 0.5rem;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      transition: background-color 0.2s ease-in-out;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+}
