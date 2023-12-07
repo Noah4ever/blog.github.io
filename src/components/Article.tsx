@@ -48,6 +48,7 @@ export default function Article({ articles }: { articles: Article[] }) {
           <img
             src={`./authors/${article?.author.pictureUrl ?? "default.webp"}`}
             alt={article?.author.name}
+            loading="lazy"
             className="article-author-profile-picture"
           />
           <div className="article-author-profile-right">
