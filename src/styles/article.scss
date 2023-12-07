@@ -1,7 +1,7 @@
 $max-width-phone: 500px;
 
 .article-container {
-  margin: 60px auto;
+  margin-top: 60px;
   width: 100%;
   padding-top: 4rem;
   display: flex;
@@ -45,14 +45,24 @@ $max-width-phone: 500px;
         }
       }
     }
+  }
+
+  .article-below-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color-1);
+    margin-top: 2rem;
+    box-shadow: inset 0px 10px 10px -10px var(--shadow-color),
+      inset 0px -10px 10px -10px var(--shadow-color);
+
     .article-author-profile {
-      border-top: 1px solid var(--background-color-border);
       padding: 0.5rem 1rem;
-      padding-top: 2rem;
+      padding-top: 1rem;
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-block: 2rem;
+      width: 75%;
       .article-author-profile-picture {
         object-fit: cover;
         width: 150px;

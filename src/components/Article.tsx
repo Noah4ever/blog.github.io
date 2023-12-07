@@ -41,7 +41,10 @@ export default function Article({ articles }: { articles: Article[] }) {
             </span>
           ))}
         </section>
-        <section className="article-author-profile">
+      </div>
+
+      <section className="article-below-container">
+        <div className="article-author-profile">
           <img
             src={`./authors/${article?.author.pictureUrl ?? "default.jpg"}`}
             alt={article?.author.name}
@@ -56,8 +59,8 @@ export default function Article({ articles }: { articles: Article[] }) {
               {article?.author.description}
             </p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </article>
   );
 }
