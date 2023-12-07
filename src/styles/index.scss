@@ -28,6 +28,7 @@ body.light {
   --background-color: #fefefe;
   --background-color-1: #f4f4f4;
   --background-color-border: #e2e2e2d7;
+  --background-color-navigation: #d5d5d5d8;
   --text-color: #272727;
   --text-color-muted: #999;
   --shadow-color: #999;
@@ -42,7 +43,9 @@ body.light {
 
 body {
   --background-color: #1d1d1d;
+  --background-color-1: #2a2a2a;
   --background-color-border: #333333d7;
+  --background-color-navigation: rgba(27, 25, 25, 0.847);
   --text-color: #dddddd;
   --text-color-muted: #999;
   --shadow-color: #111;
