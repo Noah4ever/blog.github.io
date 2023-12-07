@@ -46,7 +46,7 @@ export default function Article({ articles }: { articles: Article[] }) {
       <section className="article-below-container">
         <div className="article-author-profile">
           <img
-            src={`./authors/${article?.author.pictureUrl ?? "default.jpg"}`}
+            src={`./authors/${article?.author.pictureUrl ?? "default.webp"}`}
             alt={article?.author.name}
             className="article-author-profile-picture"
           />
