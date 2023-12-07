@@ -1,9 +1,10 @@
+import authors from "@/authors/Authors";
 import { Article } from "@/types/Article";
 
 const article: Article = {
   id: "",
   title: "How to create a subdomain for GitHub Pages",
-  author: "Noah Thiering",
+  author: authors[0],
   content: "",
   tags: ["GitHub Pages", "Subdomain", "DNS", "CNAME"],
   description:
@@ -15,7 +16,7 @@ const article: Article = {
 const content = `
 # ${article.title}
 
-Written by: [${article.author}](https://thiering.org/)
+Written by: [${article.author.name}](https://thiering.org/)
 Created at: ${article.createdAt}
 Updated at: ${article.updatedAt}
 

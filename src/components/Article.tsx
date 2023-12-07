@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import { Article } from "@/types/Article";
 import Markdown from "react-markdown";
 import { useParams } from "react-router-dom";
@@ -5,10 +6,14 @@ import "@/styles/article.scss";
 
 export default function Article({ articles }: { articles: Article[] }) {
   const { title } = useParams();
+  const [article, setArticle] = useState<Article>();
 
-  const article = articles.find(
-    (article) => article.id === title?.toLowerCase()
-  );
+  useEffect(() => {
+    const article = articles.find(
+      (article) => article.id === title?.toLowerCase()
+    );
+    setArticle(article);
+  }, [articles, title]);
 
   return (
     <article className="article-container">
@@ -20,6 +25,22 @@ export default function Article({ articles }: { articles: Article[] }) {
               {tag}
             </span>
           ))}
+        </section>
+        <section className="article-author-profile">
+          <img
+            src={`./authors/${article?.author.pictureUrl ?? "default.jpg"}`}
+            alt={article?.author.name}
+            className="article-author-profile-picture"
+          />
+          <div className="article-author-profile-right">
+            <p className="article-author-profile-name">
+              {article?.author.name}
+              {article?.author.age ? `, ${article?.author.age}` : ""}
+            </p>
+            <p className="article-author-profile-description">
+              {article?.author.description}
+            </p>
+          </div>
         </section>
       </div>
     </article>

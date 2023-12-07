@@ -22,7 +22,7 @@ export default function ArticlePreview({ article }: { article: Article }) {
         ))}
       </p>
       <p className="article-preview-info">
-        {article.author}, {article.createdAt}
+        {article.author.name}, {article.createdAt}
       </p>
     </article>
   );

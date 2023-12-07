@@ -1,7 +1,9 @@
+import { Author } from "./Author";
+
 export type Article = {
   id: string;
   title: string;
-  author: string;
+  author: Author;
   content: string;
   tags: string[];
   description: string;

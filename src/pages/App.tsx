@@ -10,7 +10,6 @@ export default function App() {
   const [articles, setArticles] = React.useState<ArticleType[]>();
 
   React.useEffect(() => {
-    console.log("App mounted");
     for (const article of getAllArticles()) {
       setArticles((_articles) => [...(_articles ?? []), article]);
     }
