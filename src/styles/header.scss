@@ -32,7 +32,7 @@ $max-width-phone: 700px;
       }
       @media screen and (max-width: $max-width-phone) {
         .header-logo-name.lastname {
-          font-size: 2.25rem;
+          font-size: 1.75rem;
         }
         .header-logo-name.firstname {
           font-size: 1.5rem;
@@ -60,7 +60,7 @@ $max-width-phone: 700px;
         margin-right: 0.5rem;
         .header-link-menu {
           display: block;
-          font-size: 3rem;
+          font-size: 2.5rem;
           font-weight: 600;
           fill: var(--text-color);
           color: var(--text-color);

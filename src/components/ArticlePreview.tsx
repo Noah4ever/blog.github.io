@@ -14,9 +14,9 @@ export default function ArticlePreview({ article }: { article: Article }) {
     <article className="article-preview-container" onClick={handleArticleClick}>
       <h3 className="article-preview-title">{article.title}</h3>
       <p className="article-preview-description">{article.description}</p>
-      <p className="article-preview-tech-stack">
-        {article.techStack.map((tag) => (
-          <span className="article-preview-tag" key={tag}>
+      <p className="article-tags">
+        {article.tags.map((tag) => (
+          <span className="article-tag" key={tag}>
             {tag}
           </span>
         ))}

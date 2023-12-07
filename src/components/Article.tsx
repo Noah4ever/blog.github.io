@@ -12,7 +12,16 @@ export default function Article({ articles }: { articles: Article[] }) {
 
   return (
     <article className="article-container">
-      <Markdown>{article ? article.content : "No content"}</Markdown>
+      <div className="article-content">
+        <Markdown>{article ? article.content : "No content"}</Markdown>
+        <section className="article-tags">
+          {article?.tags?.map((tag, index) => (
+            <span key={index} className="article-tag">
+              {tag}
+            </span>
+          ))}
+        </section>
+      </div>
     </article>
   );
 }

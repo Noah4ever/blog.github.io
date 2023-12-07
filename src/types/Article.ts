@@ -3,7 +3,7 @@ export type Article = {
   title: string;
   author: string;
   content: string;
-  techStack: string[];
+  tags: string[];
   description: string;
   createdAt: string;
   updatedAt: string;

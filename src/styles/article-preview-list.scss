@@ -4,7 +4,7 @@
   .article-preview-list {
     margin: 0;
     padding: 0;
-    padding-inline: 2rem;
+    padding-inline: 0rem;
     .article-preview-list-item {
       list-style-type: none;
       padding: 0.5rem;
@@ -12,8 +12,10 @@
       margin-bottom: 1rem;
       transition: background-color 0.2s ease-in-out;
       border-radius: 0.25rem;
+      border: 1px solid var(--highlight);
       cursor: pointer;
       &:hover {
+        border: 1px solid var(--primary);
         background-color: var(--highlight);
       }
     }
