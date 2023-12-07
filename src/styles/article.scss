@@ -55,6 +55,17 @@ $max-width-phone: 500px;
     box-shadow: inset 0px 10px 10px -10px var(--shadow-color),
       inset 0px -10px 10px -10px var(--shadow-color);
 
+    @media screen and (max-width: $max-width-phone) {
+      .article-author-profile {
+        width: 80% !important;
+        flex-direction: column !important;
+        text-align: center;
+        .article-author-profile-picture {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
     .article-author-profile {
       padding: 0.5rem 1rem;
       padding-top: 1rem;
