@@ -17,11 +17,11 @@ const content = `
 
 # Creating a Subdomain for GitHub Pages: A Step-by-Step Guide
 
-If you're looking to establish a subdomain for your GitHub Pages, you're in the right place. This guide will walk you through the process, step by step, making it easy for you to showcase your content on a custom subdomain like 'blog.example.com'. We'll be using GitHub and your DNS provider to set up a CNAME record, linking your subdomain to your GitHub Pages repository.
+If you're looking to establish a [subdomain](https://en.wikipedia.org/wiki/Subdomain) for your [GitHub Pages](https://pages.github.com/), you're in the right place. This guide will walk you through the process, step by step, making it easy for you to showcase your content on a custom subdomain like 'blog.example.com'. We'll be using GitHub and your DNS provider to set up a [CNAME](https://en.wikipedia.org/wiki/CNAME_record) record, linking your subdomain to your GitHub Pages repository.
 
 ## Step 1: Create a New Repository on GitHub
 
-Start by creating a new repository on GitHub. Choose a meaningful name for your repository; for example, if you want your subdomain to be 'blog.example.com', you could name your repository 'blog.github.io'.
+Start by creating a new repository on GitHub (if you dont know how, click [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)). Choose a meaningful name for your repository; for example, if you want your subdomain to be 'blog.example.com', you could name your repository 'blog.github.io'.
 
 ![Create Repository](https://via.placeholder.com/800x400)
 
@@ -35,7 +35,7 @@ Once you've selected the branch, GitHub will provide you with the URL of your Gi
 
 ## Step 3: Configure Your DNS Provider
 
-Now, head over to your DNS provider's website. This could be services like GoDaddy, Namecheap, or any other provider you're using. Look for the DNS management or DNS settings section.
+Now, head over to your DNS provider's website. This could be services like [GoDaddy](https://www.godaddy.com/de-de), [Namecheap](https://www.namecheap.com/), or any other provider you're using. Look for the DNS management or DNS settings section.
 
 Add a new CNAME record with the following details:
 
