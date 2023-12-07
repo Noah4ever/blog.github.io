@@ -8,8 +8,8 @@ const article: Article = {
   techStack: ["GitHub Pages", "Subdomain", "DNS", "CNAME"],
   description:
     "Do you want to create a subdomain for your GitHub pages website? This article will show you how to do it.",
-  createdAt: "06.12.2023",
-  updatedAt: "06.12.2023",
+  createdAt: "07.12.2023",
+  updatedAt: "07.12.2023",
 };
 
 const content = `
