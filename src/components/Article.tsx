@@ -18,6 +18,21 @@ export default function Article({ articles }: { articles: Article[] }) {
   return (
     <article className="article-container">
       <div className="article-content">
+        <h1 className="article-title">{article?.title}</h1>
+        <section className="article-info">
+          <img
+            src={`./authors/${article?.author.pictureUrl ?? "default.jpg"}`}
+            alt={article?.author.name}
+            className="article-info-picture"
+          />
+          <div className="article-info-right">
+            <span className="article-info-name">
+              Written by {article?.author.name}
+            </span>
+            <span className="article-info-delimter">·</span>
+            <span className="article-info-date">{article?.createdAt}</span>
+          </div>
+        </section>
         <Markdown>{article ? article.content : "No content"}</Markdown>
         <section className="article-tags">
           {article?.tags?.map((tag, index) => (

@@ -14,11 +14,6 @@ const article: Article = {
 };
 
 const content = `
-# ${article.title}
-
-Written by: [${article.author.name}](https://thiering.org/)
-Created at: ${article.createdAt}
-Updated at: ${article.updatedAt}
 
 ### Creating a Subdomain for GitHub Pages: A Step-by-Step Guide
 

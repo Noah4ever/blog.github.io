@@ -24,7 +24,8 @@ $max-width-phone: 700px;
         text-decoration: none;
       }
       .header-logo-name.lastname {
-        font-size: 2.5rem;
+        font-family: monospace !important;
+        font-size: 2.25rem;
       }
       .header-logo-name.firstname {
         font-size: 1.75rem;
