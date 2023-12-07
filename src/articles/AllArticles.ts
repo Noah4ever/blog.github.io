@@ -1,6 +1,7 @@
-import { Article } from "@/types/Article";
+import { Article as ArticleType } from "@/types/Article";
 
-export default function getAllArticles(): Article[] {
+import { article as a } from "@/articles/CreateSubdomainForGitHubPages";
+
+export default function getAllArticles(): ArticleType[] {
   return [a];
 }
-import { article as a } from "./CreateSubdomainForGithubPages";
