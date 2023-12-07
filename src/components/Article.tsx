@@ -21,7 +21,7 @@ export default function Article({ articles }: { articles: Article[] }) {
         <h1 className="article-title">{article?.title}</h1>
         <section className="article-info">
           <img
-            src={`./authors/${article?.author.pictureUrl ?? "default.jpg"}`}
+            src={`./authors/${article?.author.pictureUrl ?? "default.webp"}`}
             alt={article?.author.name}
             className="article-info-picture"
           />
