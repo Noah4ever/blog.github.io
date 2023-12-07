@@ -2,12 +2,12 @@ import { Article } from "@/types/Article";
 
 const article: Article = {
   id: "",
-  title: "How to create a subdomain for GitHub pages",
+  title: "How to create a subdomain for GitHub Pages",
   author: "Noah Thiering",
   content: "",
   techStack: ["GitHub Pages", "Subdomain", "DNS", "CNAME"],
   description:
-    "Do you want to create a subdomain for your GitHub pages website? This article will show you how to do it.",
+    "Do you want to create a subdomain for your GitHub Pages website? This article will show you how to do it.",
   createdAt: "07.12.2023",
   updatedAt: "07.12.2023",
 };
