@@ -133,6 +133,13 @@ export default function Header() {
           )}
         </button>
         <ul className="header-links">
+          <li className="header-search">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="header-search-input"
+            />
+          </li>
           {showLinks ? (
             <>
               <li>

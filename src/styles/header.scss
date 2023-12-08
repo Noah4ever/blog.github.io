@@ -1,4 +1,4 @@
-$max-width-phone: 700px;
+$max-width-phone: 960px;
 .header-container {
   display: flex;
   flex-direction: row;
@@ -149,6 +149,21 @@ $max-width-phone: 700px;
         text-decoration: none;
         list-style-type: none;
         cursor: pointer;
+        &.header-search {
+          .header-search-input {
+            background-color: transparent;
+            border: none;
+            padding: 0.5rem 1rem;
+            color: var(--text-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-left: 2px solid var(--primary);
+            transition: background-color 170ms ease-out;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
         a {
           color: var(--text-color);
           text-decoration: none;
