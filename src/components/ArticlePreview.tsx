@@ -15,14 +15,16 @@ export default function ArticlePreview({ article }: { article: Article }) {
       <h3 className="article-preview-title">{article.title}</h3>
       <p className="article-preview-description">{article.description}</p>
       <p className="article-tags">
-        {article.tags.map((tag) => (
-          <span className="article-tag" key={tag}>
-            {tag}
-          </span>
-        ))}
+        {article.tags
+          ? article.tags.map((tag) => (
+              <span className="article-tag" key={tag}>
+                {tag}
+              </span>
+            ))
+          : ""}
       </p>
       <p className="article-preview-info">
-        {article.author.name}, {article.createdAt}
+        {article.author.name ?? ""}, {article.createdAt ?? ""}
       </p>
     </article>
   );

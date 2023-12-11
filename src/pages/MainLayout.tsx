@@ -1,10 +1,17 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Article } from "@/types/Article";
 import { LocalStorageController } from "@/utils/PersistanceController";
 import React, { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
-function MainLayout() {
+function MainLayout({
+  articles,
+  setShowArticles,
+}: {
+  articles: Article[];
+  setShowArticles: any;
+}) {
   const persistance = new LocalStorageController();
   useEffect(() => {
     const asciiArt = `
@@ -31,7 +38,8 @@ function MainLayout() {
       <a href="#main" className="skip-link">
         Skip to main content
       </a>
-      <Header />
+
+      <Header articles={articles ?? []} setShowArticles={setShowArticles} />
       <main>
         {/* Render the child routes */}
         <Outlet />

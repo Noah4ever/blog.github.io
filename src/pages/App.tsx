@@ -8,21 +8,32 @@ import { Article as ArticleType } from "@/types/Article";
 
 export default function App() {
   const [articles, setArticles] = React.useState<ArticleType[]>();
+  const [showArticles, setShowArticles] = React.useState<ArticleType[]>();
 
   React.useEffect(() => {
+    const articlesList: ArticleType[] = [];
+
     for (const article of getAllArticles()) {
-      setArticles((_articles) => [...(_articles ?? []), article]);
+      articlesList.push(article);
     }
+
+    setArticles(articlesList);
+    setShowArticles(articlesList);
   }, []);
 
   const router = createHashRouter([
     {
       path: "/",
-      element: <MainLayout />,
+      element: (
+        <MainLayout
+          articles={articles ?? []}
+          setShowArticles={setShowArticles}
+        />
+      ),
       children: [
         {
           path: "/",
-          element: <ArticlePreviewList articles={articles ?? []} />,
+          element: <ArticlePreviewList articles={showArticles ?? []} />,
         },
         {
           path: "/article/:title",

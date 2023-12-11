@@ -8,8 +8,16 @@ import {
   HiOutlineMoon as Moon,
 } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
+import SearchBar from "./Searchbar";
+import { Article } from "@/types/Article";
 
-export default function Header() {
+export default function Header({
+  articles,
+  setShowArticles,
+}: {
+  articles: Article[];
+  setShowArticles: any;
+}) {
   const persistance = new LocalStorageController();
 
   const headerRef = useRef<HTMLElement>(null);
@@ -134,10 +142,9 @@ export default function Header() {
         </button>
         <ul className="header-links">
           <li className="header-search">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="header-search-input"
+            <SearchBar
+              articles={articles ?? []}
+              setShowArticles={setShowArticles}
             />
           </li>
           {showLinks ? (
