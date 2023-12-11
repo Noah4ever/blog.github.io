@@ -11,6 +11,7 @@ const article: Article = {
     "Do you want to create a subdomain for your GitHub Pages website? This article will show you how to do it.",
   createdAt: "07.12.2023",
   updatedAt: "07.12.2023",
+  readTimeInMinutes: 8,
 };
 
 const content = `

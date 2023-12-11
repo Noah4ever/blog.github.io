@@ -31,6 +31,10 @@ export default function Article({ articles }: { articles: Article[] }) {
             </span>
             <span className="article-info-delimter">·</span>
             <span className="article-info-date">{article?.createdAt}</span>
+            <span className="article-info-delimter">·</span>
+            <span className="article-info-date">
+              {article?.readTimeInMinutes} min read
+            </span>
           </div>
         </section>
         <Markdown>{article ? article.content : "No content"}</Markdown>

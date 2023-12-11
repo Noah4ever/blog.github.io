@@ -9,4 +9,5 @@ export type Article = {
   description: string;
   createdAt: string;
   updatedAt: string;
+  readTimeInMinutes: number;
 };

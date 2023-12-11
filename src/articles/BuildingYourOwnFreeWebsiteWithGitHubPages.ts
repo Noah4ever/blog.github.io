@@ -17,6 +17,7 @@ const article: Article = {
     "Create your free website effortlessly using GitHub Pages, perfect for showcasing portfolios, blogs, and projects without any hosting costs.",
   createdAt: "08.12.2023",
   updatedAt: "08.12.2023",
+  readTimeInMinutes: 5,
 };
 
 const content = `
