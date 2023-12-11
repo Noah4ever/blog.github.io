@@ -8,7 +8,7 @@ import {
   HiOutlineMoon as Moon,
 } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
-import SearchBar from "./Searchbar";
+import SearchBar from "@/components/SearchBar";
 import { Article } from "@/types/Article";
 
 export default function Header({
