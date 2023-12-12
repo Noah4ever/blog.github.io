@@ -1,6 +1,8 @@
 .article-preview-container {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: var(--text-color);
   .article-preview-title {
     font-size: 1.5rem;
     font-weight: bold;
