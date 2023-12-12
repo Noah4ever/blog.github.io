@@ -47,10 +47,36 @@ $max-width-phone: 500px;
     }
   }
 
+  .article-user-interactions {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    svg {
+      fill: var(--text-color);
+      width: 1.5rem;
+      height: 1.5rem;
+      cursor: pointer;
+      transition: fill 125ms ease-in-out;
+      &:hover {
+        fill: var(--primary);
+      }
+    }
+    .article-user-interactions-count {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .article-user-interaction {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.35rem;
+    }
+  }
   .article-below-container {
     display: flex;
     justify-content: center;
     background-color: var(--background-color-1);
+    width: 100%;
     margin-top: 2rem;
     box-shadow: inset 0px 10px 10px -10px var(--shadow-color),
       inset 0px -10px 10px -10px var(--shadow-color);
@@ -73,7 +99,7 @@ $max-width-phone: 500px;
       flex-direction: row;
       align-items: center;
       margin-block: 2rem;
-      width: 75%;
+      width: 60%;
       .article-author-profile-picture {
         object-fit: cover;
         width: 150px;
