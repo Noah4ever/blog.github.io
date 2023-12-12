@@ -17,6 +17,11 @@ export default function App() {
       articlesList.push(article);
     }
 
+    // Sort articles by date
+    articlesList.sort((a, b) => {
+      return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+    });
+
     setArticles(articlesList);
     setShowArticles(articlesList);
   }, []);
