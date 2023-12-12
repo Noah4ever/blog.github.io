@@ -41,6 +41,10 @@ export default function App() {
           element: <ArticlePreviewList articles={showArticles ?? []} />,
         },
         {
+          path: "/search?",
+          element: <ArticlePreviewList articles={showArticles ?? []} />,
+        },
+        {
           path: "/article/:title",
           element: <Article articles={articles ?? []} />,
         },

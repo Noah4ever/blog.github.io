@@ -11,7 +11,7 @@ export default function ArticlePreviewList({
     <div className="article-preview-list-container">
       <h2>All Articles</h2>
       <ul className="article-preview-list">
-        {articles ? (
+        {articles.length > 0 ? (
           articles.map((article) => (
             <li
               key={article.id + article.createdAt}
